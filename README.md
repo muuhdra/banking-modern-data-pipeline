@@ -1,15 +1,14 @@
-# 🏦 Banking Modern Data Stack
+# Banking Modern Data Stack
 
 
-## 📌 Project Overview
+## Project Overview
 This project demonstrates an **end-to-end modern data stack pipeline** for a **Banking domain**.  
 We simulate **customer, account, and transaction data**, stream changes in real time, transform them into analytics-ready models, and visualize insights — following **best practices of CI/CD and data warehousing**.
 
-👉 Think of it as a **real-world banking data ecosystem** built on modern data tools.  
+ A **real-world banking data ecosystem** built on modern data tools.  
 
----
 
-## 🏗️ Architecture  
+## Architecture  
 
 
 
@@ -21,7 +20,6 @@ We simulate **customer, account, and transaction data**, stream changes in real 
 5. **DBT** → Applies transformations, builds marts & snapshots (SCD Type-2).  
 6. **CI/CD with GitHub Actions** → Automated tests, build & deployment.  
 
----
 
 ## Tech Stack
 - **Snowflake** → Cloud Data Warehouse  
@@ -34,7 +32,6 @@ We simulate **customer, account, and transaction data**, stream changes in real 
 - **Docker & docker-compose** → Containerized setup  
 - **Git & GitHub Actions** → CI/CD workflows  
 
----
 
 ## Key Features
 - **PostgreSQL OLTP**: Source relational database with ACID guarantees (customers, accounts, transactions)  
@@ -45,7 +42,6 @@ We simulate **customer, account, and transaction data**, stream changes in real 
 - **Automated pipeline orchestration** using Airflow  
 - **CI/CD pipeline** with dbt tests + GitHub Actions  
 
----
 
 ## Repository Structure
 ```text
@@ -75,7 +71,6 @@ banking-modern-datastack/
 └── README.md
 ```
 
----
 
 ## Step-by-Step Implementation  
 
@@ -84,39 +79,33 @@ banking-modern-datastack/
 - Inserted data into **PostgreSQL (OLTP)** so the system behaves like a real transactional database (**ACID, constraints**).  
 - Controlled generation via `config.yaml`.  
 
----
 
 ### **2. Kafka + Debezium CDC**  
 - Set up **Kafka Connect & Debezium** to capture changes from **Postgres**.  
 - Streamed **CDC events** into **MinIO**.  
 
----
 
 ### **3. Airflow Orchestration**  
 - Built DAGs to:  
   - Ingest **MinIO data → Snowflake (Bronze)**.  
   - Schedule **snapshots & incremental loads**.  
 
----
 
 ### **4. Snowflake Warehouse**  
 - Organized into **Bronze → Silver → Gold layers**.  
 - Created **staging schemas** for ingestion.  
 
----
 
 ### **5. DBT Transformations**  
 - **Staging models** → cleaned source data.  
 - **Dimension & fact models** → built marts.  
 - **Snapshots** → tracked history of accounts & customers.  
 
----
 
 ### **6. CI/CD with GitHub Actions**  
 - **ci.yml** → Lint, dbt compile, run tests.  
 - **cd.yml** → Deploy DAGs & dbt models on merge.  
 
----
 
 ## Final Deliverables  
 - **Automated CDC pipeline** from Postgres → Snowflake  
@@ -125,10 +114,10 @@ banking-modern-datastack/
 - **Synthetic banking dataset** for demos  
 - **CI/CD workflows** ensuring reliability  
 
----
 
 ## 🌟 About Me
 
 Hi! I'm **Jordi Dangoh**. I’m a Data Engineer, ready for new challenges. My goal is to improve myself, make complex/simple projects and give
 the best practice in the role of a data engineer. I don't have many years of experience, but my motivation and curiosity drive me to learn fast,
 adapt quickly, and contribute with impactful solutions.
+
