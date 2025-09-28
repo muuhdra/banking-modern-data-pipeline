@@ -132,7 +132,3 @@ banking-modern-datastack/
 Hi! I'm **Jordi Dangoh**. I’m a Data Engineer, ready for new challenges. My goal is to improve myself, make complex/simple projects and give
 the best practice in the role of a data engineer. I don't have many years of experience, but my motivation and curiosity drive me to learn fast,
 adapt quickly, and contribute with impactful solutions.
-
-**Author**: *Jaya Chandra Kadiveti*  
-**LinkedIn**: [jayachandrakadiveti](https://www.linkedin.com/in/jayachandrakadiveti/)  
-**Contact**: [Kadivetijayachandra@gmail.com](mailto:Kadivetijayachandra@gmail.com)  
